@@ -40,11 +40,5 @@ FinalFunnel AS(
 	CROSS JOIN SalesThreshold st
 )
 
---SELECT
---    FunnelStage,
---    COUNT(DISTINCT CustomerKey) AS CustomerCount
---FROM FinalFunnel
---GROUP BY FunnelStage
---ORDER BY CustomerCount DESC;
 
 SELECT * FROM FinalFunnel
